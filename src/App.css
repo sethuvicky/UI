@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Lato', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ h1{
+  font-weight: 600;
+ }
+.Heading{
+  margin-top: 5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .page{
+  padding: 5%;
+ }
+ .profile_div{
   display: flex;
-  flex-direction: column;
+
+ }
+
+
+ .product_description_container {
+  margin-top: 2%;
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 97%;
+  overflow: auto; /* Add this line */
+}
+
+.product_description_heading {
+  background: #d9d9d9;
+  font-weight: 600;
+  padding: 1%;
+}
+
+.product_description_textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.price{
+  font-size:x-large;
+}
+/* Media Queries */
+.sell_btns{
+  padding: 2%;
+  font-weight: bolder;
+}
+.buyBtn{
+  margin-top:2%;
+  padding: 1%;
+ }
+@media only screen and (max-width: 480px) {
+  .product_description_textarea {
+    font-size: 0.8rem;
+  }
+  .getit{
+    margin-top: 4%;
+  }
+  .sell_btns{
+    padding: 5%;
+    font-weight: bolder;
+
+  }
+  .buyBtn{
+    margin-top:2%;
+    padding: 4%;
+   }
+   .Heading{
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .product_description_textarea {
+    font-size: 0.7rem;
+  }
+}
+
+ .profile_image{
+   border-radius: 50%;
+   width: 33px;
+   height: 33px;
+   margin-top: 1%;
+   border: 2px solid #D4AF38;
+ }
+ .profile_text{
+  margin-left: 1%;
+  font-weight: 600;
+ }
+ .rating_box{
+  margin-top: 0.6rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  display: flex;
+  font-weight: 500;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .image_slider{
+  margin-top: 3%;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .price_section{
+  display:flex;
+  justify-content: space-between;
+  height: 1%;
+ }
+ .purchase_div{
+  display: grid;
+  grid-template-columns: 20% 77%;
+  margin-top: 3%;
+ }
+ @media only screen and (max-width: 480px) {
+h1{font-size: medium;} 
+.profile_image{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-top: 3%;
+  border: 2px solid #D4AF38;
+}
+.profile_text{
+  margin-left: 3%;
+  font-weight: 600;
+  font-size: 0.9rem;
+ }
+ .price_section{
+  font-size: 0.8rem;
+  
+ }
+ 
 }
